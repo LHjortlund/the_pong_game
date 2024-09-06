@@ -1,13 +1,18 @@
-import turtle
 from turtle import Turtle
-STARTING_POSITIONS = starting_positions = [(350, 0)]
 
-class Paddle:
-    def __init__(self):
-        self.segments = []
-        self.create_paddle()
+class Paddle(Turtle):
+    def __init__(self, position):
+        super().__init__()
+        self.shape("square")
+        self.color("white")
+        self.shapesize(stretch_wid=5, stretch_len=1)  #Strækker figuren til en paddle-form
+        self.penup()
+        self.goto(position)
 
-        turtle.shapesize(stretch_wid=3, stretch_len=1, outline=0)
-        paddle.goto(position)
+    def go_up(self):  #Flytter paddle op
+        new_y = self.ycor() + 20
+        self.goto(self.xcor(), new_y)
 
-    def create_paddle(self):
+    def go_down(self):  #Flytter paddle ned
+        new_y = self.ycor() - 20
+        self.goto(self.xcor(), new_y)

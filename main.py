@@ -1,6 +1,5 @@
-from turtle import Turtle, Screen
-UP = 90
-DOWN = 270
+from turtle import Screen
+from paddle import Paddle
 
 screen = Screen()
 screen.setup(width=800, height=600)
@@ -8,27 +7,15 @@ screen.bgcolor("black")
 screen.title("My Pong Game")
 screen.tracer(0)
 
-
-
-
-paddle = Turtle()
-paddle.shape("square")
-paddle.color("white")
-paddle.shapesize(stretch_wid=5, stretch_len=1)
-paddle.penup()
-paddle.goto(350,0)
-
-def paddle_up():
-    new_y= paddle.ycor()+20
-    paddle.goto(paddle.xcor(), new_y)
-
-def paddle_down():
-    new_y= paddle.ycor()-20
-    paddle.goto(paddle.xcor(), new_y)
+r_paddle = Paddle((350, 0))  #Højre paddle
+l_paddle = Paddle((-350, 0))  #Venstre paddle
 
 screen.listen()
-screen.onkey(paddle.up,"Up")
-screen.onkey(paddle.down, "Down")
+screen.onkey(r_paddle.go_up, "Up")        #Flytter højre paddle op
+screen.onkey(r_paddle.go_down, "Down")    #Flytter højre paddle ned
+
+screen.onkey(l_paddle.go_up, "w")         #Flytter venstre paddle op
+screen.onkey(l_paddle.go_down, "s")       #Flytter venstre paddle ned
 
 game_is_on = True
 while game_is_on:
