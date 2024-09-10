@@ -22,8 +22,17 @@ screen.onkey(l_paddle.go_down, "s")       #Flytter venstre paddle ned
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0,1)
+    time.sleep(0.1)
     screen.update()
     ball.move()
+
+    #Detect collision with wall
+    if ball.ycor() > 280 or ball.ycor() < -280:
+        #needs to bounce
+        ball.bounce_y()
+
+    #detect collision with both paddles
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 340:
+        ball.bounce_x()
 
 screen.exitonclick()

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="574373ff-6759-4521-9a6a-d6821e586029" name="Changes" comment="update paddle">
+    <list default="true" id="574373ff-6759-4521-9a6a-d6821e586029" name="Changes" comment="added ball class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/ball.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paddle.py" beforeDir="false" afterPath="$PROJECT_DIR$/paddle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,12 +78,30 @@
       <option name="project" value="LOCAL" />
       <updated>1725636761844</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update paddle + main">
+      <option name="closed" value="true" />
+      <created>1725640805177</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725640805177</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added ball class">
+      <option name="closed" value="true" />
+      <created>1725641728536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725641728536</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="screen settings" />
     <MESSAGE value="update paddle" />
-    <option name="LAST_COMMIT_MESSAGE" value="update paddle" />
+    <MESSAGE value="update paddle + main" />
+    <MESSAGE value="added ball class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ball class" />
   </component>
 </project>
