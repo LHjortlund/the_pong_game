@@ -5,7 +5,7 @@ class Paddle(Turtle):
         super().__init__()
         self.shape("square")
         self.color("white")
-        self.shapesize(stretch_wid=5, stretch_len=1)  #Strækker figuren til en paddle-form
+        self.shapesize(stretch_wid=5, stretch_len=0.5)  #Strækker figuren til en paddle-form
         self.penup()
         self.goto(position)
 
