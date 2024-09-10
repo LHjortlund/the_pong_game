@@ -16,15 +16,15 @@ ball = Ball()
 scoreboard = Scoreboard()
 
 screen.listen()
-screen.onkey(r_paddle.go_up, "Up")        #Flytter højre paddle op
-screen.onkey(r_paddle.go_down, "Down")    #Flytter højre paddle ned
+screen.onkeypress(r_paddle.go_up, "Up")        #Flytter højre paddle op
+screen.onkeypress(r_paddle.go_down, "Down")    #Flytter højre paddle ned
 
-screen.onkey(l_paddle.go_up, "w")         #Flytter venstre paddle op
-screen.onkey(l_paddle.go_down, "s")       #Flytter venstre paddle ned
+screen.onkeypress(l_paddle.go_up, "w")         #Flytter venstre paddle op
+screen.onkeypress(l_paddle.go_down, "s")       #Flytter venstre paddle ned
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(ball.move_speed)
     screen.update()
     ball.move()
 
